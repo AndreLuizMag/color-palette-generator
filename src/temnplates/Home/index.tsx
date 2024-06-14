@@ -5,6 +5,8 @@ import { LayoutGroup, motion, useAnimation, useInView } from "framer-motion";
 import { appFadeInUp } from "@/utils/framerMotion";
 
 import { SecPicker } from "./SecPicker";
+import { SecVariant } from "./SecVariant";
+import { SecFrame } from "./SecFrame";
 
 const Wrapper = ({ content }: { content: ReactNode }) => {
   const control = useAnimation();
@@ -34,7 +36,10 @@ const Wrapper = ({ content }: { content: ReactNode }) => {
 };
 
 export const ContentWrapper = ({}) => {
-  const contentList = [<SecPicker key="picker" />];
+  const contentList = [
+    <SecPicker key="picker" />,
+    <SecVariant key="variant" />,
+  ];
 
   return (
     <LayoutGroup>

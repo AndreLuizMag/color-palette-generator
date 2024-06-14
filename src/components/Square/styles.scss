@@ -1,0 +1,23 @@
+.square {
+  height: 100px;
+
+  &[data-highlight="true"] {
+    box-shadow: 0px 0px 0px 4px var(--font-primary);
+  }
+  &[data-highlight="false"] {
+    box-shadow: none;
+  }
+
+  .square__text {
+    font-size: 12px;
+
+    &.theme- {
+      &light {
+        color: black;
+      }
+      &dark {
+        color: white;
+      }
+    }
+  }
+}

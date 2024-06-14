@@ -1,14 +1,16 @@
 import React, { FC, HTMLAttributes, ReactNode } from "react";
-import "./styles.scss";
 
 interface SectionProps extends HTMLAttributes<HTMLDivElement> {
+  className?: string;
   children: ReactNode;
 }
 
-export const Section: FC<SectionProps> = ({ children }) => {
+export const Section: FC<SectionProps> = ({ className, children }) => {
   return (
-    <section className="section p-block-16 radius-md">
-      <div className="container-md">{children}</div>
+    <section
+      className={`section p-block-10 radius-md theme-secondary ${className}`}
+    >
+      {children}
     </section>
   );
 };

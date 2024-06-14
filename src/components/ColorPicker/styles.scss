@@ -1,0 +1,28 @@
+.color-picker {
+  .__label {
+  }
+
+  .color-picker__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+
+    &::-webkit-color-swatch-wrapper {
+      padding: 0;
+      border: 2px solid var(--font-primary);
+      border-radius: 6px;
+    }
+
+    &::-webkit-color-swatch {
+      border: none;
+      border-radius: 3px;
+    }
+  }
+}

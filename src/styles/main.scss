@@ -1,4 +1,9 @@
+:root {
+  --heading-color: var(--font-primary);
+  --text-color: var(--font-tertiary);
+  --code-color: var(--font-tertiary);
+}
+
 body {
   min-height: 100dvh;
-  background-color: #010101;
 }

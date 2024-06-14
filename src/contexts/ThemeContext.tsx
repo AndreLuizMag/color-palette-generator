@@ -2,16 +2,13 @@
 
 import React, { createContext, useContext, ReactNode } from "react";
 import useColorPicker from "@/hooks/useColorPicker";
-
-interface HSLColor {
-  h: number;
-  s: number;
-  l: number;
-}
+import { HSLColor } from "@/utils/interface";
+import { Theme } from "@/utils/type";
 
 interface ThemeContextProps {
   color: string;
   hslColor: HSLColor;
+  theme: Theme | null;
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -20,10 +17,10 @@ const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const { color, hslColor, handleChange } = useColorPicker();
+  const { color, hslColor, theme, handleChange } = useColorPicker();
 
   return (
-    <ThemeContext.Provider value={{ color, hslColor, handleChange }}>
+    <ThemeContext.Provider value={{ color, hslColor, theme, handleChange }}>
       {children}
     </ThemeContext.Provider>
   );
