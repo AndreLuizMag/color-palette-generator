@@ -6,7 +6,7 @@ import { appFadeInUp } from "@/utils/framerMotion";
 
 import { SecPicker } from "./SecPicker";
 import { SecVariant } from "./SecVariant";
-import { SecFrame } from "./SecFrame";
+import { SecExamples } from "./SecExamples";
 
 const Wrapper = ({ content }: { content: ReactNode }) => {
   const control = useAnimation();
@@ -39,6 +39,7 @@ export const ContentWrapper = ({}) => {
   const contentList = [
     <SecPicker key="picker" />,
     <SecVariant key="variant" />,
+    <SecExamples key="examples" />,
   ];
 
   return (

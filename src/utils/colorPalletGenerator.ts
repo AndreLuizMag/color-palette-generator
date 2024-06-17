@@ -63,6 +63,6 @@ const generateVariant = (x: number) => {
   }
 };
 
-export const generateBackground = (h: number, s: number, l: number) => {
+export const generateColor = (h: number, s: number, l: number) => {
   return `hsl(${h}, ${s}%, ${l}%)`;
 };

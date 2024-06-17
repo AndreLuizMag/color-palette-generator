@@ -9,7 +9,7 @@ export interface Hex {
 }
 
 export interface compColorVariant {
-  l:
+  colorVariant:
     | "l10"
     | "l20"
     | "l30"
