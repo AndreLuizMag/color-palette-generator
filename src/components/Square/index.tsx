@@ -18,7 +18,7 @@ export const Square: FC<SquareProps> = ({ l, highlight }) => {
       className="square ds-flex-center w-100 radius-sm"
       data-highlight={highlight ? "true" : "false"}
     >
-      <span className={`square__text theme-${l && l < 70 ? "dark" : "light"}`}>
+      <span className={`square__text theme-${l && l < 50 ? "dark" : "light"}`}>
         hsl({hslColor.h}, {hslColor.s}%, {l}%)
       </span>
     </div>
