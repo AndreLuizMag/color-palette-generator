@@ -39,7 +39,6 @@ export const colorPaletteGenerator = (hslColor: HSLColor): Theme => {
       };
     }
   } else {
-    // Handle other ranges here
     return {
       base: 0,
       l10: 10,
@@ -48,10 +47,10 @@ export const colorPaletteGenerator = (hslColor: HSLColor): Theme => {
       l50: 50,
       l60: 60,
       l70: 70,
-      l80: parseInt(`8${variant[0]}`, 10),
-      l802: parseInt(`8${variant[1]}`, 10),
-      l90: parseInt(`9${variant[0]}`, 10),
-      l902: parseInt(`9${variant[1] === 9 ? "8" : variant[1]}`, 10),
+      l80: 80,
+      l802: 85,
+      l90: 90,
+      l902: 95,
     };
   }
 };
