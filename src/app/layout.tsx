@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} p-10 theme-primary`}>
+      <body className={`${inter.className} p-10 theme-secondary`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

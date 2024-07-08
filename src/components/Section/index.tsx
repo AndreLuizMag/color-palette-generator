@@ -8,7 +8,7 @@ interface SectionProps extends HTMLAttributes<HTMLDivElement> {
 export const Section: FC<SectionProps> = ({ className, children }) => {
   return (
     <section
-      className={`section p-block-10 radius-md theme-secondary ${className}`}
+      className={`section p-block-10 radius-md theme-primary ${className}`}
     >
       {children}
     </section>
