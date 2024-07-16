@@ -18,8 +18,11 @@ export const SelectFont = () => {
       className="select-font cursor-pointer"
     >
       <option value="Nunito Sans, sans-serif">Nunito Sans</option>
-      <option value="Merriweather, serif">Merriweather</option>
-      <option value="Playwrite PE, cursive">Playwrite Perú</option>
+      <option value="Nunito, sans-serif">Nunito</option>
+      <option value="DM Sans, sans-serif">DM Sans</option>
+      <option value="Bai Jamjuree, sans-serif">Bai Jamjuree</option>
+      <option value="Roboto Slab, serif">Roboto Slab</option>
+      <option value="Aleo, serif">Aleo</option>
     </select>
   );
 };
