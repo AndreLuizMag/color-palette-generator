@@ -1,5 +1,6 @@
 import ColorPicker from "@/components/ColorPicker";
 import { Section } from "@/components/Section";
+import { SelectFont } from "@/components/SelectFont";
 import { useThemeContext } from "@/contexts/ThemeContext";
 import React from "react";
 
@@ -13,6 +14,7 @@ export const SecPicker = () => {
           <div className="col ds-flex flow-col-nw gap-md">
             <h1 className="sm:heading-03">Color Picker</h1>
             <ColorPicker />
+            <SelectFont />
           </div>
           <div className="col ds-flex flow-row-nw justify-end">
             <svg

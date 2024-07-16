@@ -114,13 +114,13 @@ hr {
   box-sizing: content-box;
   overflow: visible;
 }
-:is(body) {
+body {
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-text);
   color: var(--text-color);
   line-height: var(--font-line-height);
 }
-:is(code) {
+code {
   font-family: var(--font-family-code);
   font-weight: var(--font-weight-code);
   color: var(--code-color);
@@ -129,20 +129,19 @@ hr {
 small {
   font-size: var(--small-size);
 }
-:is(
-    h1,
-    .heading-01,
-    h2,
-    .heading-02,
-    h3,
-    .heading-03,
-    h4,
-    .heading-04,
-    h5,
-    .heading-03,
-    h6,
-    .heading-06
-  ) {
+
+h1,
+.heading-01,
+h2,
+.heading-02,
+h3,
+.heading-03,
+h4,
+.heading-04,
+h5,
+.heading-03,
+h6,
+.heading-06 {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-heading);
   line-height: var(--heading-line-height);

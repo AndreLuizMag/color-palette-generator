@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "@/styles/helix/helixcss.css";
-import "@/styles/helix/helixcolor.css";
+// import { Inter } from "next/font/google";
+// import "@/styles/helix/helixcss.css";
+// import "@/styles/helix/helixcolor.css";
 import "@/styles/main.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 import { ThemeProvider } from "@/contexts/ThemeContext";
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} p-10 theme-secondary`}>
+      <body className="p-10 theme-secondary">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
